@@ -21,7 +21,7 @@ The configs folder contains the yaml that configurates the package in terms of r
 
 The data folder contains the results of *offline* processing the traversability. The repo for that will be released soon. For now, we have tiffs for georeferenced traversability and fuel maps, the traversability png image and the file containng the waypoints. The current waypoint file is *.mat*, but will be changed to numpy *.npy* soon.
 
-The published topics are */map* as a 2D occupancy grid, and */scout_fuel_waypoints* as a pose array msg. To run everything source the catkin_ws and run:
+The published topics are */scout_traversability_map* as a 2D occupancy grid, and */scout_fuel_waypoints* as a pose array msg. To run everything source the catkin_ws and run:
 ```
 roslaunch scout_waypoint_trav map_trav_pub.launch
 ```
