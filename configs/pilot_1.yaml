@@ -1,0 +1,6 @@
+image: ../data/traversabilty.png
+resolution: 0.3
+origin: [-4.868002445386674e+02, 52.673905905872786, 0.0]
+occupied_thresh: 0.5
+free_thresh: 0.5
+negate: 0

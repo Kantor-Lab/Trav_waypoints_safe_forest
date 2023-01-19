@@ -1,0 +1,10 @@
+<launch>
+<arg name="outdir" default="$(find scout_waypoint_trav)/configs/pilot_1.yaml"/>
+  <remap from="/map" to="/scout_traversability_map"/>
+  <node name="map_server" pkg="map_server" type="map_server"
+  args="$(arg outdir)"/>
+  
+  <node name="publish_waypoints" pkg="scout_waypoint_trav" type="publish_waypoints.py"/>
+
+  
+</launch>
