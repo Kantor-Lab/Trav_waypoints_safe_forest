@@ -15,7 +15,9 @@ If worried about mixing dependencies in the system, I suggest using a virtual en
 pip install -U rosinstall msgpack empy defusedxml netifaces
 ```
 
-An additional package that needs to be installed is the [ROS navigation stack](https://github.com/ros-planning/navigation). This package is used to read the traversability image and publish it into a occupancy grid. The configs folder contains the yaml that configurates the package in terms of resolution, world origin and image to be read.
+An additional package that needs to be installed is the [ROS navigation stack](https://github.com/ros-planning/navigation). This package is used to read the traversability image and publish it into a occupancy grid. 
+
+The configs folder contains the yaml that configurates the package in terms of resolution, world origin and image to be read.
 
 The data folder contains the results of *offline* processing the traversability. The repo for that will be released soon. For now, we have tiffs for georeferenced traversability and fuel maps, the traversability png image and the file containng the waypoints. The current waypoint file is *.mat*, but will be changed to numpy *.npy* soon.
 
